@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn how to create stunning visuals for your website using AI image generation tools like Midjourney, DALL-E, and Stable Diffusion.">
+  <title>Using AI Image Generators for Your Website — Qi Scan Tutorial</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <span class="nav-logo-icon">Q</span>
+        <span>Qi Scan</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" data-i18n="nav_home">Home</a>
+        <a href="scan-website.html" data-i18n="nav_scan">Scan Tools</a>
+        <a href="tutorials.html" data-i18n="nav_tutorials" class="active">Tutorials</a>
+        <a href="blog.html" data-i18n="nav_blog">Blog</a>
+        <a href="about.html" data-i18n="nav_about">About</a>
+        <a href="#" data-lang-switch="zh" style="font-size:0.85rem;color:#6b7280;">中文</a>
+        <a href="#" data-lang-switch="en" style="font-size:0.85rem;color:#6b7280;">EN</a>
+        <a href="scan-website.html" class="btn btn-primary btn-sm nav-cta" data-i18n="nav_start">Get Started</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html" data-i18n="nav_home">Home</a>
+        <span class="sep">&rsaquo;</span>
+        <a href="tutorials.html" data-i18n="nav_tutorials">Tutorials</a>
+        <span class="sep">&rsaquo;</span>
+        <span>AI Image Generators</span>
+      </div>
+      <h1>Using AI Image Generators for Your Website</h1>
+      <p>Create stunning visuals for your website using AI image generation tools like Midjourney, DALL-E, and Stable Diffusion — no designer needed.</p>
+      <div style="display:flex;gap:16px;align-items:center;margin-top:16px;font-size:0.9rem;color:var(--color-text-light);">
+        <span>By <strong>Qi Scan Team</strong></span>
+        <span>&middot;</span>
+        <span>Jun 5, 2026</span>
+        <span>&middot;</span>
+        <span>7 min read</span>
+        <span>&middot;</span>
+        <span class="article-tag" data-i18n="tutorial_tag_ai">AI Tools</span>
+      </div>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="content-grid">
+
+        <div class="article-content">
+          <h2>Why AI Images Matter for Your Website</h2>
+          <p>Visual content increases engagement by up to 80%. But hiring a designer for every image is expensive and slow. AI image generators solve both problems — they're fast, affordable, and the quality has reached a point where most visitors can't tell the difference.</p>
+
+          <h2>Top 3 AI Image Generators in 2026</h2>
+
+          <h3>1. Midjourney v7 (Best Quality)</h3>
+          <p>Midjourney remains the gold standard for artistic quality. Its latest v7 model produces photorealistic images with incredible detail. Perfect for hero images, blog illustrations, and social media graphics.</p>
+          <ul>
+            <li><strong>Strengths:</strong> Photorealism, artistic style, consistency</li>
+            <li><strong>Cost:</strong> $10/month starter plan</li>
+            <li><strong>Best for:</strong> Professional websites, marketing materials</li>
+          </ul>
+
+          <h3>2. DALL-E 3 (Best Integration)</h3>
+          <p>Built into ChatGPT Plus, DALL-E 3 follows instructions precisely and integrates seamlessly with your existing workflow. Great for generating images that match specific brand guidelines.</p>
+          <ul>
+            <li><strong>Strengths:</strong> Text accuracy, instruction following, ChatGPT integration</li>
+            <li><strong>Cost:</strong> Included in ChatGPT Plus ($20/month)</li>
+            <li><strong>Best for:</strong> Quick iterations, branded content</li>
+          </ul>
+
+          <h3>3. Stable Diffusion XL (Best for Control)</h3>
+          <p>Open-source and self-hostable, SDXL gives you complete control over the generation process. Use with Automatic1111 or ComfyUI for advanced workflows like inpainting, outpainting, and style transfer.</p>
+          <ul>
+            <li><strong>Strengths:</strong> Free, customizable, local deployment</li>
+            <li><strong>Cost:</strong> Free (requires GPU)</li>
+            <li><strong>Best for:</strong> Developers, advanced users</li>
+          </ul>
+
+          <h2>Prompt Engineering for Web Images</h2>
+          <p>The key to great AI images is writing effective prompts. Here's a formula that works consistently:</p>
+
+          <div class="code-block">
+            <pre><code># Image prompt formula:
+[Subject] + [Style] + [Lighting] + [Composition] + [Details]
+
+# Examples:
+"A modern SaaS dashboard on a laptop, clean minimalist style, 
+soft natural lighting, centered composition, blue and white 
+color palette, 4k resolution"
+
+"Team of diverse professionals collaborating in a bright office, 
+photorealistic style, golden hour lighting, shallow depth of field, 
+warm tones"</code></pre>
+          </div>
+
+          <h2>Optimizing Images for Web</h2>
+          <p>AI-generated images are often large files. Here's how to optimize them:</p>
+          <ol>
+            <li><strong>Resize:</strong> Match your display dimensions (don't upload 4000px wide images for a 400px slot)</li>
+            <li><strong>Convert:</strong> Use WebP format for 30% smaller file sizes</li>
+            <li><strong>Compress:</strong> Use TinyPNG or Squoosh for lossless compression</li>
+            <li><strong>Lazy load:</strong> Add loading="lazy" to all images below the fold</li>
+          </ol>
+
+          <div style="margin:32px 0;padding:24px;background:var(--color-bg);border-radius:var(--radius-lg);border:1px solid var(--color-border);">
+            <h3 style="font-size:1.1rem;font-weight:700;color:var(--color-primary);margin-bottom:12px;">💡 Pro Tip</h3>
+            <p style="color:var(--color-text-light);font-size:0.95rem;">After generating AI images, always run your website through <a href="scan-website.html">Qi Scan's Website Scanner</a> to ensure image optimization isn't hurting your page speed score.</p>
+          </div>
+
+          <h2>Common Use Cases</h2>
+          <ul>
+            <li><strong>Hero backgrounds:</strong> Full-width abstract or lifestyle images</li>
+            <li><strong>Blog illustrations:</strong> Custom graphics for each article</li>
+            <li><strong>Social media:</strong> Platform-specific sized images</li>
+            <li><strong>Product photos:</strong> AI-generated lifestyle shots for e-commerce</li>
+            <li><strong>Icons and graphics:</strong> Custom icon sets matching your brand</li>
+          </ul>
+
+          <h2>Legal Considerations</h2>
+          <p>Most AI-generated images are free to use commercially, but always check the terms of service for your chosen tool. Midjourney and DALL-E allow commercial use on paid plans. Stable Diffusion is completely open-source.</p>
+
+          <h2>Conclusion</h2>
+          <p>AI image generators have democratized professional visual design. Whether you're building a personal blog or a business website, you can create stunning imagery that rivals custom-designed visuals — at a fraction of the cost and time.</p>
+        </div>
+
+        <aside class="sidebar">
+          <div class="sidebar-widget">
+            <h4 data-i18n="sidebar_toc">Table of Contents</h4>
+            <ul style="list-style:none;padding:0;">
+              <li style="padding:6px 0;"><a href="#" style="color:var(--color-text);text-decoration:none;font-size:0.9rem;">&rsaquo; Top 3 AI Generators</a></li>
+              <li style="padding:6px 0;"><a href="#" style="color:var(--color-text);text-decoration:none;font-size:0.9rem;">&rsaquo; Prompt Formula</a></li>
+              <li style="padding:6px 0;"><a href="#" style="color:var(--color-text);text-decoration:none;font-size:0.9rem;">&rsaquo; Web Optimization</a></li>
+              <li style="padding:6px 0;"><a href="#" style="color:var(--color-text);text-decoration:none;font-size:0.9rem;">&rsaquo; Common Use Cases</a></li>
+              <li style="padding:6px 0;"><a href="#" style="color:var(--color-text);text-decoration:none;font-size:0.9rem;">&rsaquo; Legal Notes</a></li>
+            </ul>
+          </div>
+
+          <div class="sidebar-widget">
+            <h4 data-i18n="sidebar_related">Related Tutorials</h4>
+            <ul style="list-style:none;padding:0;">
+              <li style="padding:8px 0;border-bottom:1px solid var(--color-border);"><a href="tutorial-build-website-ai.html" style="color:var(--color-text);text-decoration:none;font-size:0.9rem;">Build a Website with AI</a></li>
+              <li style="padding:8px 0;border-bottom:1px solid var(--color-border);"><a href="tutorial-github-pages.html" style="color:var(--color-text);text-decoration:none;font-size:0.9rem;">Deploy with GitHub Pages</a></li>
+              <li style="padding:8px 0;"><a href="tutorial-seo-tips-2026.html" style="color:var(--color-text);text-decoration:none;font-size:0.9rem;">SEO Tips for 2026</a></li>
+            </ul>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><h3>Qi Scan</h3><p data-i18n="footer_desc">AI-powered scanning tools for the modern web.</p></div>
+        <div class="footer-col"><h4 data-i18n="footer_product">Product</h4><ul><li><a href="scan-website.html" data-i18n="feature_website_title">Website Scan</a></li><li><a href="scan-brand.html" data-i18n="feature_brand_title">Brand Scan</a></li><li><a href="scan-product.html" data-i18n="feature_product_title">Product Scan</a></li></ul></div>
+        <div class="footer-col"><h4 data-i18n="footer_company">Company</h4><ul><li><a href="about.html" data-i18n="footer_about">About</a></li><li><a href="blog.html" data-i18n="footer_blog">Blog</a></li><li><a href="tutorials.html" data-i18n="footer_tutorials">Tutorials</a></li></ul></div>
+        <div class="footer-col"><h4 data-i18n="footer_legal">Legal</h4><ul><li><a href="#" data-i18n="footer_privacy">Privacy Policy</a></li><li><a href="#" data-i18n="footer_terms">Terms of Service</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><span>&copy; 2026 Qi Scan. <span data-i18n="footer_rights">All rights reserved.</span></span><span>Built with ❤️ and AI</span></div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

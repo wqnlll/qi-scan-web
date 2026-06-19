@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Qi Scan — AI-Powered Website Scanner. Analyze any website, brand, or product in seconds.">
+  <meta name="keywords" content="website scanner, AI analysis, SEO tool, brand scan, product scan">
+  <title>Qi Scan — AI-Powered Website Scanner</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Google AdSense 广告代码（上线后替换为自己的 ad-client 和 ad-slot） -->
+  <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+</head>
+<body>
+
+  <!-- ========== Navigation Bar ========== -->
+  <nav class="navbar">
+    <div class="container">
+      <!-- Logo -->
+      <a href="index.html" class="nav-logo">
+        <span class="nav-logo-icon">Q</span>
+        <span>Qi Scan</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <div class="nav-links">
+        <a href="index.html" data-i18n="nav_home" class="active">Home</a>
+        <a href="scan-website.html" data-i18n="nav_scan">Scan Tools</a>
+        <a href="tutorials.html" data-i18n="nav_tutorials">Tutorials</a>
+        <a href="blog.html" data-i18n="nav_blog">Blog</a>
+        <a href="about.html" data-i18n="nav_about">About</a>
+        <!-- Language Switcher -->
+        <a href="#" data-lang-switch="zh" style="font-size:0.85rem;color:#6b7280;">中文</a>
+        <a href="#" data-lang-switch="en" style="font-size:0.85rem;color:#6b7280;">EN</a>
+        <!-- CTA Button -->
+        <a href="scan-website.html" class="btn btn-primary btn-sm nav-cta" data-i18n="nav_start">Get Started</a>
+      </div>
+
+      <!-- Mobile Hamburger -->
+      <button class="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== Hero Section ========== -->
+  <section class="hero">
+    <div class="hero-grid"></div>
+    <div class="container hero-content">
+      <h1>
+        <span data-i18n="hero_title">AI-Powered Website Scanner</span>
+      </h1>
+      <p data-i18n="hero_subtitle">
+        Analyze any website, brand, or product in seconds. Get actionable reports with SEO scores, performance metrics, and optimization tips — all powered by AI.
+      </p>
+      <div class="hero-buttons">
+        <a href="scan-website.html" class="btn btn-primary btn-lg" data-i18n="hero_btn_scan">Start Scanning</a>
+        <a href="tutorials.html" class="btn btn-outline btn-lg" data-i18n="hero_btn_learn">Learn More</a>
+      </div>
+      <!-- Stats -->
+      <div class="hero-stats">
+        <div>
+          <div class="hero-stat-number">3</div>
+          <div class="hero-stat-label" data-i18n="hero_stat_tools">Scan Tools</div>
+        </div>
+        <div>
+          <div class="hero-stat-number">12000</div>
+          <div class="hero-stat-label" data-i18n="hero_stat_users">Active Users</div>
+        </div>
+        <div>
+          <div class="hero-stat-number">50000</div>
+          <div class="hero-stat-label" data-i18n="hero_stat_reports">Reports Generated</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Ad Banner Top ========== -->
+  <div class="container">
+    <div class="ad-placeholder ad-placeholder-banner" data-i18n="ad_banner">Advertisement</div>
+  </div>
+
+  <!-- ========== Features Section ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-title" data-i18n="features_title">Powerful Scan Tools</h2>
+        <p class="section-subtitle mx-auto" data-i18n="features_subtitle">
+          Three core scanning tools to analyze everything about your online presence.
+        </p>
+      </div>
+      <div class="features-grid">
+        <!-- Feature 1: Website Scan -->
+        <a href="scan-website.html" class="feature-card" style="display:block;text-decoration:none;color:inherit;">
+          <div class="feature-icon">🌐</div>
+          <h3 data-i18n="feature_website_title">Website Scan</h3>
+          <p data-i18n="feature_website_desc">Deep analysis of any website — SEO, speed, mobile-friendliness, security, and more.</p>
+        </a>
+        <!-- Feature 2: Brand Scan -->
+        <a href="scan-brand.html" class="feature-card" style="display:block;text-decoration:none;color:inherit;">
+          <div class="feature-icon">🏷️</div>
+          <h3 data-i18n="feature_brand_title">Brand Scan</h3>
+          <p data-i18n="feature_brand_desc">Evaluate your brand's online presence, social media footprint, and competitor positioning.</p>
+        </a>
+        <!-- Feature 3: Product Scan -->
+        <a href="scan-product.html" class="feature-card" style="display:block;text-decoration:none;color:inherit;">
+          <div class="feature-icon">📦</div>
+          <h3 data-i18n="feature_product_title">Product Scan</h3>
+          <p data-i18n="feature_product_desc">Assess product landing pages for conversion optimization, UX quality, and trust signals.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== How It Works ========== -->
+  <section class="section" style="background:var(--color-white);border-top:1px solid var(--color-border);border-bottom:1px solid var(--color-border);">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-title" data-i18n="how_title">How It Works</h2>
+      </div>
+      <div class="features-grid" style="margin-top:48px;">
+        <div class="feature-card" style="text-align:center;">
+          <div class="feature-icon" style="margin:0 auto 20px;">1️⃣</div>
+          <h3 data-i18n="how_step1">Enter URL or Name</h3>
+          <p data-i18n="how_step1_desc">Input the website URL, brand name, or product description.</p>
+        </div>
+        <div class="feature-card" style="text-align:center;">
+          <div class="feature-icon" style="margin:0 auto 20px;">2️⃣</div>
+          <h3 data-i18n="how_step2">AI Scans Everything</h3>
+          <p data-i18n="how_step2_desc">Our AI engine analyzes dozens of factors across multiple dimensions.</p>
+        </div>
+        <div class="feature-card" style="text-align:center;">
+          <div class="feature-icon" style="margin:0 auto 20px;">3️⃣</div>
+          <h3 data-i18n="how_step3">Get Your Report</h3>
+          <p data-i18n="how_step3_desc">Receive a detailed report with scores, issues, and actionable recommendations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Latest Tutorials Preview ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-title" data-i18n="tutorials_title">Latest Tutorials</h2>
+        <p class="section-subtitle mx-auto" data-i18n="tutorials_subtitle">
+          Step-by-step guides to help you build and grow your online presence.
+        </p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;margin-top:40px;">
+        <!-- Tutorial Card 1 -->
+        <div class="article-card">
+          <div class="article-card-inner">
+            <div class="article-card-meta">
+              <span class="article-tag" data-i18n="tutorial_tag_ai">AI Tools</span>
+              <span>Jun 15, 2026</span>
+              <span>5 min</span>
+            </div>
+            <h3><a href="tutorial-detail.html">How to Build a Website Using AI in 2026</a></h3>
+            <p>Learn how to use AI tools like Claude, ChatGPT, and Cursor to build a professional website from scratch in under 30 minutes.</p>
+          </div>
+        </div>
+        <!-- Tutorial Card 2 -->
+        <div class="article-card">
+          <div class="article-card-inner">
+            <div class="article-card-meta">
+              <span class="article-tag" data-i18n="tutorial_tag_monetize">Monetization</span>
+              <span>Jun 12, 2026</span>
+              <span>8 min</span>
+            </div>
+            <h3><a href="tutorial-detail.html">Google AdSense for Beginners: Complete Guide</a></h3>
+            <p>Everything you need to know about applying for Google AdSense, placing ads, and maximizing your revenue from day one.</p>
+          </div>
+        </div>
+        <!-- Tutorial Card 3 -->
+        <div class="article-card">
+          <div class="article-card-inner">
+            <div class="article-card-meta">
+              <span class="article-tag" data-i18n="tutorial_tag_seo">SEO</span>
+              <span>Jun 10, 2026</span>
+              <span>6 min</span>
+            </div>
+            <h3><a href="tutorial-detail.html">SEO Tips to Drive Organic Traffic in 2026</a></h3>
+            <p>Discover the latest SEO strategies that actually work in 2026, including AI-powered content optimization techniques.</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center" style="margin-top:32px;">
+        <a href="tutorials.html" class="btn btn-secondary" data-i18n="view_all_tutorials">View All Tutorials</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA Section ========== -->
+  <section class="section" style="background:linear-gradient(135deg,var(--color-primary),var(--color-gradient-end));color:white;text-align:center;">
+    <div class="container">
+      <h2 class="section-title" style="color:white;" data-i18n="cta_title">Ready to Scan?</h2>
+      <p style="color:rgba(255,255,255,0.7);font-size:1.1rem;margin-bottom:32px;max-width:500px;margin-left:auto;margin-right:auto;" data-i18n="cta_desc">
+        Start analyzing your website, brand, or product for free.
+      </p>
+      <a href="scan-website.html" class="btn btn-primary btn-lg" data-i18n="cta_btn">Start Free Scan</a>
+    </div>
+  </section>
+
+  <!-- ========== Footer ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <h3>Qi Scan</h3>
+          <p data-i18n="footer_desc">AI-powered scanning tools for the modern web. Analyze, optimize, and grow your online presence.</p>
+        </div>
+        <!-- Product -->
+        <div class="footer-col">
+          <h4 data-i18n="footer_product">Product</h4>
+          <ul>
+            <li><a href="scan-website.html" data-i18n="footer_tools">Website Scan</a></li>
+            <li><a href="scan-brand.html" data-i18n="nav_scan">Brand Scan</a></li>
+            <li><a href="scan-product.html" data-i18n="feature_product_title">Product Scan</a></li>
+            <li><a href="#" data-i18n="footer_pricing">Pricing</a></li>
+          </ul>
+        </div>
+        <!-- Company -->
+        <div class="footer-col">
+          <h4 data-i18n="footer_company">Company</h4>
+          <ul>
+            <li><a href="about.html" data-i18n="footer_about">About</a></li>
+            <li><a href="blog.html" data-i18n="footer_blog">Blog</a></li>
+            <li><a href="about.html#contact" data-i18n="footer_contact">Contact</a></li>
+          </ul>
+        </div>
+        <!-- Legal -->
+        <div class="footer-col">
+          <h4 data-i18n="footer_legal">Legal</h4>
+          <ul>
+            <li><a href="#" data-i18n="footer_privacy">Privacy Policy</a></li>
+            <li><a href="#" data-i18n="footer_terms">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Qi Scan. <span data-i18n="footer_rights">All rights reserved.</span></span>
+        <span>Built with ❤️ and AI</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

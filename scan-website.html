@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Scan any website with Qi Scan. Get AI-powered SEO, speed, and security analysis reports.">
+  <title>Website Scan — Qi Scan</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <span class="nav-logo-icon">Q</span>
+        <span>Qi Scan</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" data-i18n="nav_home">Home</a>
+        <a href="scan-website.html" data-i18n="nav_scan" class="active">Scan Tools</a>
+        <a href="tutorials.html" data-i18n="nav_tutorials">Tutorials</a>
+        <a href="blog.html" data-i18n="nav_blog">Blog</a>
+        <a href="about.html" data-i18n="nav_about">About</a>
+        <a href="#" data-lang-switch="zh" style="font-size:0.85rem;color:#6b7280;">中文</a>
+        <a href="#" data-lang-switch="en" style="font-size:0.85rem;color:#6b7280;">EN</a>
+        <a href="scan-website.html" class="btn btn-primary btn-sm nav-cta" data-i18n="nav_start">Get Started</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html" data-i18n="nav_home">Home</a>
+        <span class="sep">›</span>
+        <span data-i18n="feature_website_title">Website Scan</span>
+      </div>
+      <h1 data-i18n="feature_website_title">Website Scan</h1>
+      <p>Analyze any website for SEO, speed, mobile-friendliness, and security.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div style="max-width:800px;margin:0 auto;">
+        <div class="scan-section">
+          <h2 style="font-size:1.3rem;font-weight:700;color:var(--color-primary);margin-bottom:20px;">🌐 <span data-i18n="feature_website_title">Website Scan</span></h2>
+          <div class="scan-input-group">
+            <input type="text" id="website-url" placeholder="Enter website URL (e.g., https://example.com)" data-i18n-placeholder="scan_input_placeholder_url">
+            <button class="btn btn-primary" onclick="handleWebsiteScan()" data-i18n="scan_btn">Scan Now</button>
+          </div>
+          <div class="scan-progress">
+            <div class="progress-bar-wrapper"><div class="progress-bar-fill" style="width:0%;"></div></div>
+            <div class="progress-status" data-i18n="scan_scanning">Scanning...</div>
+          </div>
+        </div>
+
+        <div class="ad-placeholder ad-placeholder-inline" data-i18n="ad_inline">Sponsored</div>
+        <div class="scan-report"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--color-white);border-top:1px solid var(--color-border);">
+    <div class="container">
+      <h2 class="section-title text-center" style="margin-bottom:40px;" data-i18n="related_tools">Related Tools</h2>
+      <div class="features-grid">
+        <a href="scan-brand.html" class="feature-card" style="display:block;text-decoration:none;color:inherit;">
+          <div class="feature-icon">🏷️</div>
+          <h3 data-i18n="feature_brand_title">Brand Scan</h3>
+          <p data-i18n="feature_brand_desc">Evaluate your brand's online presence and competitor positioning.</p>
+        </a>
+        <a href="scan-product.html" class="feature-card" style="display:block;text-decoration:none;color:inherit;">
+          <div class="feature-icon">📦</div>
+          <h3 data-i18n="feature_product_title">Product Scan</h3>
+          <p data-i18n="feature_product_desc">Assess product landing pages for conversion optimization.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Qi Scan</h3>
+          <p data-i18n="footer_desc">AI-powered scanning tools for the modern web.</p>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer_product">Product</h4>
+          <ul>
+            <li><a href="scan-website.html" data-i18n="feature_website_title">Website Scan</a></li>
+            <li><a href="scan-brand.html" data-i18n="feature_brand_title">Brand Scan</a></li>
+            <li><a href="scan-product.html" data-i18n="feature_product_title">Product Scan</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer_company">Company</h4>
+          <ul>
+            <li><a href="about.html" data-i18n="footer_about">About</a></li>
+            <li><a href="blog.html" data-i18n="footer_blog">Blog</a></li>
+            <li><a href="tutorials.html" data-i18n="footer_tutorials">Tutorials</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer_legal">Legal</h4>
+          <ul>
+            <li><a href="#" data-i18n="footer_privacy">Privacy Policy</a></li>
+            <li><a href="#" data-i18n="footer_terms">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Qi Scan. <span data-i18n="footer_rights">All rights reserved.</span></span>
+        <span>Built with ❤️ and AI</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    function handleWebsiteScan() {
+      const input = document.getElementById('website-url');
+      if (input) simulateScan('website', input.value);
+    }
+  </script>
+</body>
+</html>

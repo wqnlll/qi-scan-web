@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Complete guide to deploying static websites for free using GitHub Pages, Netlify, and Vercel. Step-by-step instructions with code examples.">
+  <title>Deploy Your Website for Free with GitHub Pages — Qi Scan Tutorial</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <span class="nav-logo-icon">Q</span>
+        <span>Qi Scan</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" data-i18n="nav_home">Home</a>
+        <a href="scan-website.html" data-i18n="nav_scan">Scan Tools</a>
+        <a href="tutorials.html" data-i18n="nav_tutorials" class="active">Tutorials</a>
+        <a href="blog.html" data-i18n="nav_blog">Blog</a>
+        <a href="about.html" data-i18n="nav_about">About</a>
+        <a href="#" data-lang-switch="zh" style="font-size:0.85rem;color:#6b7280;">中文</a>
+        <a href="#" data-lang-switch="en" style="font-size:0.85rem;color:#6b7280;">EN</a>
+        <a href="scan-website.html" class="btn btn-primary btn-sm nav-cta" data-i18n="nav_start">Get Started</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html" data-i18n="nav_home">Home</a>
+        <span class="sep">&rsaquo;</span>
+        <a href="tutorials.html" data-i18n="nav_tutorials">Tutorials</a>
+        <span class="sep">&rsaquo;</span>
+        <span>Deploy with GitHub Pages</span>
+      </div>
+      <h1>Deploy Your Website for Free with GitHub Pages</h1>
+      <p>A comprehensive guide to deploying static websites on GitHub Pages, Netlify, and Vercel — all completely free. No hosting costs, no credit card required.</p>
+      <div style="display:flex;gap:16px;align-items:center;margin-top:16px;font-size:0.9rem;color:var(--color-text-light);">
+        <span>By <strong>Qi Scan Team</strong></span>
+        <span>&middot;</span>
+        <span>Jun 8, 2026</span>
+        <span>&middot;</span>
+        <span>10 min read</span>
+        <span>&middot;</span>
+        <span class="article-tag" data-i18n="tutorial_tag_webdev">Web Dev</span>
+      </div>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="content-grid">
+
+        <div class="article-content">
+          <h2>Why Use Free Hosting?</h2>
+          <p>In 2026, there's absolutely no reason to pay for basic web hosting. Platforms like GitHub Pages, Netlify, and Vercel offer generous free tiers that can handle thousands of visitors per month. Plus, they include free SSL certificates, CDN distribution, and automatic deployments.</p>
+
+          <h2>Option 1: GitHub Pages (Recommended for Beginners)</h2>
+          <p>GitHub Pages is the simplest way to host a static website. Here's the complete process:</p>
+
+          <h3>Step 1: Create a GitHub Repository</h3>
+          <div class="code-block">
+            <pre><code># Initialize a new Git repository in your project folder
+git init
+git add .
+git commit -m "Initial commit"
+
+# Create a new repository on GitHub.com
+# Then connect your local repo:
+git remote add origin https://github.com/username/username.github.io.git
+git branch -M main
+git push -u origin main</code></pre>
+          </div>
+
+          <h3>Step 2: Enable GitHub Pages</h3>
+          <ol>
+            <li>Go to your repository Settings</li>
+            <li>Click "Pages" in the left sidebar</li>
+            <li>Select "Deploy from a branch"</li>
+            <li>Choose "main" branch and "/ (root)" folder</li>
+            <li>Click Save — your site will be live at <code>https://username.github.io</code></li>
+          </ol>
+
+          <h3>Step 3: Custom Domain (Optional)</h3>
+          <p>To use your own domain (like <code>www.yoursite.com</code>):</p>
+          <div class="code-block">
+            <pre><code># Create a CNAME file in your project root
+echo "www.yoursite.com" &gt; CNAME
+
+# Add your domain in GitHub Pages settings
+# Then configure DNS records with your domain registrar:
+# Type: CNAME
+# Name: www
+# Value: username.github.io</code></pre>
+          </div>
+
+          <h2>Option 2: Netlify (Best for CI/CD)</h2>
+          <p>Netlify offers drag-and-drop deployment and automatic builds. Simply drag your project folder onto their dashboard, or connect your GitHub repository for automatic deployments on every push.</p>
+
+          <h2>Option 3: Vercel (Best for Frameworks)</h2>
+          <p>If you're using Next.js, React, or Vue, Vercel provides the best experience with framework-aware builds and edge functions.</p>
+
+          <h2>Comparison Table</h2>
+          <ul>
+            <li><strong>GitHub Pages:</strong> Free, simple, perfect for static sites</li>
+            <li><strong>Netlify:</strong> Free tier includes serverless functions, form handling</li>
+            <li><strong>Vercel:</strong> Best for React/Next.js, edge network, preview deployments</li>
+          </ul>
+
+          <div style="margin:32px 0;padding:24px;background:var(--color-bg);border-radius:var(--radius-lg);border:1px solid var(--color-border);">
+            <h3 style="font-size:1.1rem;font-weight:700;color:var(--color-primary);margin-bottom:12px;">💡 Pro Tip</h3>
+            <p style="color:var(--color-text-light);font-size:0.95rem;">After deploying, use Qi Scan's <a href="scan-website.html">Website Scanner</a> to verify your live site's performance, SEO, and security. Make sure everything is working perfectly before sharing your URL.</p>
+          </div>
+
+          <h2>Deployment Checklist</h2>
+          <ol>
+            <li>✅ All files uploaded and accessible</li>
+            <li>✅ SSL certificate active (HTTPS)</li>
+            <li>✅ Custom domain configured (if applicable)</li>
+            <li>✅ 404 page created</li>
+            <li>✅ Meta tags and Open Graph tags set</li>
+            <li>✅ Site tested on mobile and desktop</li>
+            <li>✅ Performance optimized (images compressed, code minified)</li>
+          </ol>
+
+          <h2>Conclusion</h2>
+          <p>Free hosting has never been this good. Whether you choose GitHub Pages, Netlify, or Vercel, you can deploy a professional website without spending a penny. The key is choosing the right platform for your needs and following best practices for optimization.</p>
+        </div>
+
+        <aside class="sidebar">
+          <div class="sidebar-widget">
+            <h4 data-i18n="sidebar_toc">Table of Contents</h4>
+            <ul style="list-style:none;padding:0;">
+              <li style="padding:6px 0;"><a href="#" style="color:var(--color-text);text-decoration:none;font-size:0.9rem;">&rsaquo; Why Free Hosting?</a></li>
+              <li style="padding:6px 0;"><a href="#" style="color:var(--color-text);text-decoration:none;font-size:0.9rem;">&rsaquo; GitHub Pages Setup</a></li>
+              <li style="padding:6px 0;"><a href="#" style="color:var(--color-text);text-decoration:none;font-size:0.9rem;">&rsaquo; Netlify Deployment</a></li>
+              <li style="padding:6px 0;"><a href="#" style="color:var(--color-text);text-decoration:none;font-size:0.9rem;">&rsaquo; Vercel for Frameworks</a></li>
+              <li style="padding:6px 0;"><a href="#" style="color:var(--color-text);text-decoration:none;font-size:0.9rem;">&rsaquo; Deployment Checklist</a></li>
+            </ul>
+          </div>
+
+          <div class="sidebar-widget">
+            <h4 data-i18n="sidebar_related">Related Tutorials</h4>
+            <ul style="list-style:none;padding:0;">
+              <li style="padding:8px 0;border-bottom:1px solid var(--color-border);"><a href="tutorial-build-website-ai.html" style="color:var(--color-text);text-decoration:none;font-size:0.9rem;">Build a Website with AI</a></li>
+              <li style="padding:8px 0;border-bottom:1px solid var(--color-border);"><a href="tutorial-seo-tips-2026.html" style="color:var(--color-text);text-decoration:none;font-size:0.9rem;">SEO Tips for 2026</a></li>
+              <li style="padding:8px 0;"><a href="tutorial-ai-images.html" style="color:var(--color-text);text-decoration:none;font-size:0.9rem;">AI Image Generators</a></li>
+            </ul>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><h3>Qi Scan</h3><p data-i18n="footer_desc">AI-powered scanning tools for the modern web.</p></div>
+        <div class="footer-col"><h4 data-i18n="footer_product">Product</h4><ul><li><a href="scan-website.html" data-i18n="feature_website_title">Website Scan</a></li><li><a href="scan-brand.html" data-i18n="feature_brand_title">Brand Scan</a></li><li><a href="scan-product.html" data-i18n="feature_product_title">Product Scan</a></li></ul></div>
+        <div class="footer-col"><h4 data-i18n="footer_company">Company</h4><ul><li><a href="about.html" data-i18n="footer_about">About</a></li><li><a href="blog.html" data-i18n="footer_blog">Blog</a></li><li><a href="tutorials.html" data-i18n="footer_tutorials">Tutorials</a></li></ul></div>
+        <div class="footer-col"><h4 data-i18n="footer_legal">Legal</h4><ul><li><a href="#" data-i18n="footer_privacy">Privacy Policy</a></li><li><a href="#" data-i18n="footer_terms">Terms of Service</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><span>&copy; 2026 Qi Scan. <span data-i18n="footer_rights">All rights reserved.</span></span><span>Built with ❤️ and AI</span></div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

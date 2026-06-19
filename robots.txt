@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://qiscan.github.io/qi-scan-web/sitemap.xml
