@@ -17,3 +17,6 @@ See [DEPLOY.md](DEPLOY.md) for detailed deployment guide.
 
 ## License
 MIT
+
+## Updated
+- 2026-06-20: Added AdSense verification code and ads.txt
